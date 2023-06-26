@@ -2,15 +2,14 @@ import getAndpostRequest from "@/utils/getAndpostRequest";
 
 export default async function handler(req, res) {
   const id = req.query._id;
-  const text = req.query;
-
+  const text = req.body.text;
+  console.log(text);
   console.log(id);
   const result = await getAndpostRequest("uptadeOne", {
     filter: { _id: { $oid: id } },
-    uptade: {
+    update: {
       $set: {
-        text: "ssss",
-        name: "skh",
+        text: text,
       },
     },
   });
