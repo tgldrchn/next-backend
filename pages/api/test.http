@@ -8,4 +8,4 @@ POST http://localhost:3000/api/create-posts
 DELETE http://localhost:3000/api/delete-posts?_id=64951304b4552e3290373afd
 
 ###
-PUT   http://localhost:3000/api/uptade-posts?_id=64990af06615da7494ea0328
+PUT   http://localhost:3000/api/update-posts?_id=64990af06615da7494ea0328
